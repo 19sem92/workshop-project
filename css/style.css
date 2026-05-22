@@ -181,8 +181,7 @@ body {
     color: #FBF7F2;
     padding: 24px 0;
     text-align: center;
-    /* BUG #6: footer має font-size 8px — занадто маленький, треба 14px */
-    font-size: 8px;
+    font-size: 14px;
 }
 
 /* TODO #4: додати адаптивність — на екранах менше 600px
