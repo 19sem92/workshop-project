@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Bean Scene — кав'ярня</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">☕ Bean Scene</div>
+            <nav class="nav">
+                <a href="#menu">Меню</a>
+                <a href="#about">Про нас</a>
+                <a href="#contact">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Найкраща кава в місті</h1>
+            <p>Свіжообсмажені зерна. Затишна атмосфера. Відкриті щодня з 8:00.</p>
+            <!-- BUG #1: кнопка має клас .btn, але посилання нікуди не веде -->
+            <a href="" class="btn">Подивитись меню</a>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Наше меню</h2>
+
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <h3>Еспресо</h3>
+                    <p>Класична подвійна порція. Міцний і насичений.</p>
+                    <span class="price">45 грн</span>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Капучино</h3>
+                    <p>Еспресо з молочною пінкою. Класика для ранку.</p>
+                    <span class="price">65 грн</span>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Лате</h3>
+                    <p>М'який смак з великою кількістю молока.</p>
+                    <span class="price">70 грн</span>
+                </div>
+
+                <!-- TODO #1: додати ще одну позицію меню — Раф каву (90 грн) -->
+
+                <!-- BUG #2: у цій позиції зламана структура — немає span з ціною -->
+                <div class="menu-item">
+                    <h3>Американо</h3>
+                    <p>Еспресо з гарячою водою. Для тих, хто любить менш міцну каву.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Про нас</h2>
+            <p>
+                Bean Scene — це маленька сімейна кав'ярня в центрі міста.
+                Ми відкрились у 2019 році з простою ідеєю: робити каву так,
+                як ми самі любимо її пити. Зерна обсмажуємо щотижня, молоко
+                беремо з місцевої ферми, а посміхатись готові навіть до того,
+                як ви зробите перший ковток.
+            </p>
+
+            <!-- TODO #2: додати блок з 3 перевагами (наприклад: свіжі зерна / Wi-Fi / затишок) -->
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Контакти</h2>
+            <ul class="contact-list">
+                <li><strong>Адреса:</strong> вул. Кавова, 7</li>
+                <li><strong>Телефон:</strong> +380 99 123 45 67</li>
+                <li><strong>Години роботи:</strong> Пн–Нд, 8:00 – 22:00</li>
+
+                <!-- BUG #3: помилка — "Instagramm" замість "Instagram" -->
+                <li><strong>Instagramm:</strong> @beanscene</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <!-- BUG #4: тут стоїть 2019 рік, треба оновити на поточний -->
+            <p>© 2019 Bean Scene. Всі права захищено.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

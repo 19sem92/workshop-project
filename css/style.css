@@ -1,0 +1,189 @@
+/* =========================
+   BEAN SCENE — стилі
+   ========================= */
+
+/* Базовий reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #2C1810;
+    background-color: #FBF7F2;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+.header {
+    background-color: #2C1810;
+    color: #FBF7F2;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #FBF7F2;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+/* BUG #5: hover ефект на навігації не працює — застосовується не до :hover, а просто до .nav a */
+.nav a {
+    color: #D4A574;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero {
+    background-color: #5C3A21;
+    color: #FBF7F2;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #D4A574;
+    color: #2C1810;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* TODO #3: додати hover-ефект для кнопки .btn
+   (наприклад, змінити background на темніший відтінок) */
+
+/* =========================
+   MENU
+   ========================= */
+.menu {
+    padding: 80px 0;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.menu-item {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #E5DDD0;
+}
+
+.menu-item h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.menu-item p {
+    color: #6B5D52;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: bold;
+    color: #5C3A21;
+    font-size: 18px;
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+.about {
+    background-color: #F0E8DC;
+    padding: 80px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 17px;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* =========================
+   CONTACT
+   ========================= */
+.contact {
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact-list {
+    list-style: none;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.contact-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #E5DDD0;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.footer {
+    background-color: #2C1810;
+    color: #FBF7F2;
+    padding: 24px 0;
+    text-align: center;
+    /* BUG #6: footer має font-size 8px — занадто маленький, треба 14px */
+    font-size: 8px;
+}
+
+/* TODO #4: додати адаптивність — на екранах менше 600px
+   .menu-grid повинен бути в одну колонку (grid-template-columns: 1fr) */
