@@ -48,8 +48,8 @@ body {
     margin-left: 24px;
 }
 
-/* BUG #5: hover ефект на навігації не працює — застосовується не до :hover, а просто до .nav a */
-.nav a {
+/* Hover ефект на навігації */
+.nav a:hover {
     color: #D4A574;
 }
 
