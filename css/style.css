@@ -49,7 +49,7 @@ body {
 }
 
 /* BUG #5: hover ефект на навігації не працює — застосовується не до :hover, а просто до .nav a */
-.nav a {
+.nav a:hover {
     color: #D4A574;
 }
 
@@ -83,6 +83,9 @@ body {
     border-radius: 4px;
 }
 
+.btn:hover {
+    background-color: #b8844f;
+}
 /* TODO #3: додати hover-ефект для кнопки .btn
    (наприклад, змінити background на темніший відтінок) */
 
@@ -182,8 +185,13 @@ body {
     padding: 24px 0;
     text-align: center;
     /* BUG #6: footer має font-size 8px — занадто маленький, треба 14px */
-    font-size: 8px;
+    font-size: 14px;
 }
 
 /* TODO #4: додати адаптивність — на екранах менше 600px
    .menu-grid повинен бути в одну колонку (grid-template-columns: 1fr) */
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
