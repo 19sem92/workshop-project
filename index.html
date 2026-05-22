@@ -10,11 +10,11 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container">
-            <div class="logo">☕ Bean Scene</div>
+            <a href="index.html" class="logo">☕ Bean Scene</a>
             <nav class="nav">
-                <a href="#menu">Меню</a>
-                <a href="#about">Про нас</a>
-                <a href="#contact">Контакти</a>
+                <a href="index.html">Головна</a>
+                <a href="index.html#about">Про нас</a>
+                <a href="index.html#contact">Контакти</a>
             </nav>
         </div>
     </header>
@@ -54,11 +54,16 @@
                 </div>
 
                 <!-- TODO #1: додати ще одну позицію меню — Раф каву (90 грн) -->
-
+                <div class="menu-item">
+                    <h3>Раф</h3>
+                    <p>Має однорідну, оксамитову консистенцію, схожу на кавовий десерт із яскравими вершково-ванільними нотками.</p>
+                    <span class="price">90 грн</span>
+                </div>
+                <!-- BUG #2: у цій позиції зламана структура — немає span з ціною -->
                 <div class="menu-item">
                     <h3>Американо</h3>
                     <p>Еспресо з гарячою водою. Для тих, хто любить менш міцну каву.</p>
-                    <span class="price">50 грн</span>
+                    <span class="price">70 грн</span>
                 </div>
 
             </div>
@@ -76,7 +81,10 @@
                 беремо з місцевої ферми, а посміхатись готові навіть до того,
                 як ви зробите перший ковток.
             </p>
-
+            <p>
+                <strong>Безкоштовний швидкий Wi-Fi</strong><br>
+                У Bean Scene ви завжди можете скористатися надійним та швидким Wi-Fi — ідеальним для роботи, навчання або просто для того, щоб залишатись на звʼязку під час кавової паузи.
+            </p>
             <!-- TODO #2: додати блок з 3 перевагами (наприклад: свіжі зерна / Wi-Fi / затишок) -->
 
         </div>
@@ -91,6 +99,7 @@
                 <li><strong>Телефон:</strong> +380 99 123 45 67</li>
                 <li><strong>Години роботи:</strong> Пн–Нд, 8:00 – 22:00</li>
 
+                <!-- BUG #3: помилка — "Instagramm" замість "Instagram" -->
                 <li><strong>Instagram:</strong> @beanscene</li>
             </ul>
         </div>
@@ -99,6 +108,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
+            <!-- BUG #4: тут стоїть 2019 рік, треба оновити на поточний -->
             <p>© 2026 Bean Scene. Всі права захищено.</p>
         </div>
     </footer>
